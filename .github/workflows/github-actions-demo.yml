@@ -8,8 +8,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
       - run: |
-          # do something to run the code
-          pwd
-          ls
+          # build image
+
+          docker build -t parker-test-blazor-thing .
+          # run image
+          docker run -d parker-test-blazor-thing 
 
 
