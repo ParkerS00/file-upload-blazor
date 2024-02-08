@@ -10,5 +10,6 @@ jobs:
       - run: |
           # do something to run the code
           pwd
+          ls
 
 
