@@ -4,4 +4,5 @@ WORKDIR /app
 COPY . .
 RUN dotnet publish -c Release -o out
 
+WORKDIR /app/out
 CMD ["dotnet", "out/web.dll"]
