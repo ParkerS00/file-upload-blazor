@@ -14,7 +14,7 @@ jobs:
           # run image
           docker run -d \
           -p 9876:8080 \
-          --name parker-test-blazor-thing
+          --name parker-test-blazor-thing \
           parker-test-blazor-thing 
 
           echo "made it to the end 🔥🔥🔥"
