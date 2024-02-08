@@ -15,7 +15,7 @@ jobs:
 
           docker rm -f parker-test-blazor-thing || true
           docker run -d \
-          -p 9876:8080 \
+          -p 7554:8080 \
           --name parker-test-blazor-thing \
           parker-test-blazor-thing 
 
